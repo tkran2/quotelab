@@ -1,0 +1,12 @@
+{
+  "python_unit_tests": 33,
+  "python_tests": "passed",
+  "dataset_rows": 12580,
+  "dataset_audit": "passed: accounting, unique run keys, inventory caps, development-only selection",
+  "max_accounting_residual": 5.218225851422176e-11,
+  "dashboard_dom_harness_combinations": 120,
+  "dashboard_live_api_rerun": "passed",
+  "dashboard_http_health": 200,
+  "dashboard_invalid_input": 400,
+  "pdf_visual_review": "6-page memo and 1-page resume rendered and inspected"
+}

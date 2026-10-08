@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "quotelab"
+version = "1.0.0"
+description = "A reproducible laboratory for inventory risk, stale quotes, and adverse selection"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24,<3", "pandas>=2.0,<3", "matplotlib>=3.7,<4"]
+
+[project.optional-dependencies]
+dev = ["ruff>=0.6"]
+report = ["reportlab>=4,<5"]
+
+[project.scripts]
+quotelab = "quotelab.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+quotelab = ["web/*.html"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+

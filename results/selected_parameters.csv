@@ -1,0 +1,5 @@
+policy,half_spread,objective
+adaptive,0.09,86.54372803893311
+fixed,0.09,77.51893798840202
+inventory,0.14,84.6191461221186
+volatility,0.09,77.27854626361125
